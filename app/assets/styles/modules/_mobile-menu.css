@@ -1,0 +1,22 @@
+.mobile-menu {
+  position: absolute;
+  top: 40px;
+  right: 40px;
+  display: block;
+  width: 54px;
+  height: 54px;
+  color: $mainWhite;
+  border: 1px solid $mainWhite;
+  padding-bottom: 10px;
+  padding-left: 6px;
+  padding-right: 6px;
+  cursor: pointer;
+  @mixin atMedium {
+    display: none;
+  }
+  div {
+    border-bottom: 1px solid $mainWhite;
+    padding: 4px;
+    margin: 4px;
+  }
+}

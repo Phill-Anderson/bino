@@ -12,6 +12,9 @@
     height: 54px;
     width: 140px;
     cursor: pointer;
+    @mixin atMedium {
+      margin-left: 40px;
+    }
   }
   &__menu {
     display: inline;
