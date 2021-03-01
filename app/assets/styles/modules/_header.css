@@ -1,0 +1,22 @@
+.header {
+  position: relative;
+  display: block;
+  &__background__image {
+    position: absolute;
+    top: 0;
+    z-index: -999;
+  }
+  &__logo {
+    display: inline-block;
+    background-color: #363941;
+    height: 54px;
+    width: 140px;
+    cursor: pointer;
+  }
+  &__menu {
+    display: inline;
+    position: relative;
+    float: right;
+    /*  background-color: rgba($mainGrey, 0.3); */
+  }
+}

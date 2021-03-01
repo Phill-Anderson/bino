@@ -1,0 +1,51 @@
+.wrapper {
+  overflow: hidden;
+  max-width: 1170px;
+  margin-left: auto;
+  margin-right: auto;
+
+  &--medium {
+    max-width: 730px;
+  }
+
+  &--narrow {
+    max-width: 470px;
+  }
+
+  &--py40 {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  &--no-padding-until-medium {
+    padding-left: 0;
+    padding-right: 0;
+
+    @mixin atMedium {
+      padding-left: 18px;
+      padding-right: 18px;
+    }
+  }
+
+  &--no-padding-until-large {
+    padding-left: 0;
+    padding-right: 0;
+
+    @mixin atLarge {
+      padding-left: 18px;
+      padding-right: 18px;
+    }
+  }
+
+  .wrapper {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  &--b-margin {
+    margin-bottom: 1rem;
+
+    @mixin atSmall {
+      margin-bottom: 4rem;
+    }
+  }
+}
