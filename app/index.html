@@ -4,7 +4,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400&display=swap" rel="stylesheet">
-    
     <title>Explore, Dream, Escape</title>
     <meta
       name="keywords"
@@ -39,21 +38,26 @@
           <div></div>
           <div></div>
         </div>
-      <div class="slider">
-        <h3>Our Clients Are Our First Priority</h3>
-        <h1>Welcome to bino</h1>
-        <img src="./assets/images/line-dot-line.png" alt="solidImage"/>
-        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-        <button>Get started now</button>
-        <button>learn more</button>
-        <div>leftArrow</div>
-        <div>RightArrow</div>
       </div>
-      <div><img src="./assets/images/downIcon.png" alt="zanguuImage"/></div>
-  </div>
-  <picture class="header__background__image">
-    <img src="assets/images/headerBG.png" />
-  </picture>
+      <div class="slider slider--centered">
+        <div class="wrapper wrapper--py-header">
+          <h3 class="slider__title slider__title--small">Our Clients Are Our First Priority</h3>
+          <h1 class="slider__title slider__title--large">Welcome to bino</h1>
+          <img class="slider__line-dot-line" src="./assets/images/line-dot-line.png" alt="solidImage"/>
+          <p class="slider__text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+          <a href="javascript:void()" class="btn btn--orange btn--256">Get started now</a>
+          <a href="javascript:void()" class="btn btn--default btn--256">learn more</a>
+        </div>
+        <div class="slider__leftArrow">&#8249;</div>
+        <div class="slider__rightArrow">&#8250;</div>
+      </div>
+        <picture class="header__background__image">
+            <source media="(min-width:1200px)" srcset="assets/images/headerBG.png">
+            <source media="(min-width:700px)" srcset="assets/images/headerBGMedium.png">
+            <source media="(min-width:600px)" srcset="assets/images/headerBGSmall.png">
+            <source media="(min-width:465px)" srcset="assets/images/headerBGSmallest.png">
+            <img src="assets/images/headerBGSmallest.png" alt="smallScreenImage" style="width:auto;">
+        </picture>
     </header>
     <script src="./assets/scripts/App.js"></script>
   </body>

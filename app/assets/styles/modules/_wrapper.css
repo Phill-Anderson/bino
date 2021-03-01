@@ -16,6 +16,24 @@
     padding-top: 40px;
     padding-bottom: 40px;
   }
+  &--py-header {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-color: rgba($mainGrey, 0.3);
+    @mixin atSmall {
+      padding-top: 50px;
+      padding-bottom: 50px;
+    }
+    @mixin atMedium {
+      padding-top: 70px;
+      padding-bottom: 70px;
+    }
+    @mixin atLarge {
+      padding-top: 180px;
+      padding-bottom: 100px;
+      background-color: transparent;
+    }
+  }
   &--no-padding-until-medium {
     padding-left: 0;
     padding-right: 0;
