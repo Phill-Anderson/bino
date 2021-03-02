@@ -3,7 +3,7 @@
   float: right;
   @mixin atMedium {
     display: block;
-    padding-right: 100px;
+    padding-right: 40px;
   }
   @mixin atLarge {
     padding-right: 0px;

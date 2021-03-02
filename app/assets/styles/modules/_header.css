@@ -28,15 +28,20 @@
   &__logo {
     display: inline-block;
     background-color: #363941;
-    height: 54px;
-    width: 140px;
+    width: 90px;
     margin-left: 40px;
     cursor: pointer;
+    @mixin atSmall {
+      width: 100px;
+    }
     @mixin atMedium {
       margin-left: 40px;
+      width: 120px;
     }
     @mixin atLarge {
-      margin-left: 0px;
+      height: 54px;
+      width: 140px;
+      margin-left: 40px;
     }
   }
   &__menu {
