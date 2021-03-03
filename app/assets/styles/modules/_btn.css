@@ -9,21 +9,9 @@
   cursor: pointer;
   border: 1px solid $mainOrange;
   border-radius: 3px;
-  @mixin atSmall {
-    font-size: $fs10;
-    font-weight: 600;
-    text-transform: uppercase;
-    padding: 18px 35px;
-  }
-  @mixin atMedium {
-    font-size: $fs12;
-    font-weight: 600;
-    padding: 22px 40px;
-  }
-  @mixin atLarge {
-    font-size: $fs14;
-    font-weight: 600;
-    padding: 24px 50px;
+
+  &--256 {
+    width: 130px;
   }
   &--orange {
     background-color: $mainOrange;
@@ -33,15 +21,28 @@
     background-color: transparent;
     border: 1px solid $mainWhite;
   }
-  &--256 {
-    width: 130px;
-    @mixin atSmall {
+  @mixin atSmall {
+    font-size: $fs10;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 18px 35px;
+    &--256 {
       width: 180px;
     }
-    @mixin atMedium {
+  }
+  @mixin atMedium {
+    font-size: $fs12;
+    font-weight: 600;
+    padding: 22px 40px;
+    &--256 {
       width: 200px;
     }
-    @mixin atLarge {
+  }
+  @mixin atLarge {
+    font-size: $fs14;
+    font-weight: 600;
+    padding: 24px 50px;
+    &--256 {
       width: 256px;
     }
   }

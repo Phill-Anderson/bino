@@ -1,0 +1,13 @@
+.title {
+  color: $mainGrey;
+  font-size: $fs22;
+  @mixin atSmall {
+    font-size: $fs24;
+  }
+  @mixin atMedium {
+    font-size: $fs30;
+  }
+  @mixin atLarge {
+    font-size: $fs36;
+  }
+}
