@@ -30,6 +30,9 @@
   }
   @mixin atMedium {
     text-align: right;
+    &__title {
+      text-align: right;
+    }
     &__desc {
       text-align: right;
     }
